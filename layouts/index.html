@@ -1,0 +1,24 @@
+{{ partial "header.html" . }}
+<body>
+    <div id="layout" class="pure-g">
+        <article class="pure-u-1">
+            {{ partial "brand.html" . }}
+	          <nav>
+	              {{ range .Site.Menus.main }}
+	              <a href="{{ .URL }}">{{ .Name }}</a>
+	              {{ end }}
+	          </nav>
+            {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
+            {{ $paginator := .Paginate (where $pages "Params.hidden" "ne" true) }}
+            {{ range $paginator.Pages }}
+            {{ partial "content.header.html" . }}
+            <p>{{ .Summary }}</p>
+            {{ if .Truncated }}
+            <p><a href="{{ .RelPermalink  }}">Read On &rarr;</a></p>
+            {{ end  }}
+            {{ end  }}
+            {{ partial "footer.html" . }}
+        </article>
+    </div>
+</body>
+</html>
