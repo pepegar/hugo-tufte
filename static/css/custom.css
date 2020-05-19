@@ -9,10 +9,15 @@
 }
 
 pre code {
+  margin: 2rem 0 2rem 0;
   width: 97.5%;
   overflow-x: auto;
 }
 
 code {
   font-family: iosevka;
+}
+
+h2 {
+  margin-top: 3.5rem;
 }
