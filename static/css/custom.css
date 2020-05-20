@@ -36,7 +36,7 @@ h2 {
 
 .theme-switch {
   display: inline-block;
-  height: 17px;
+  height: 20px;
   position: relative;
   width: 30px;
 }
@@ -72,7 +72,7 @@ input:checked + .slider {
 }
 
 input:checked + .slider:before {
-  transform: translateX(14px);
+  transform: translateX(12px);
 }
 
 .slider.round {
