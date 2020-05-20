@@ -35,17 +35,19 @@
         --link-selection-shadow-color: #b4d5fe; }
 
 [data-theme="dark"] {
-        --text-color: #eee;
-        --page-background-color: #000007;
+        --text-color: #fffff8;
+        --page-background-color: #070707;
         --horizontal-rule-color: #333333;
+        --danger-color: red;
         --link-selection-shadow-color: #4b2a01;
 }
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --text-color: #eee;
-        --page-background-color: #000007;
+        --text-color: #fffff8;
+        --page-background-color: #070707;
         --horizontal-rule-color: #333333;
+        --danger-color: red;
         --link-selection-shadow-color: #4b2a01;
     }
 }
