@@ -23,6 +23,8 @@ h2 {
 }
 
 .theme-switch-wrapper {
+  float: right;
+  margin-right: 10%;
   display: flex;
   align-items: center;
 
@@ -31,6 +33,7 @@ h2 {
     font-size: 1rem;
   }
 }
+
 .theme-switch {
   display: inline-block;
   height: 34px;
