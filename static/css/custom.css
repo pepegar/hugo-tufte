@@ -87,4 +87,8 @@ input:checked + .slider:before {
   .highlight {
     width: 100%;
   }
+
+  .theme-switch-wrapper {
+    display: none;
+  }
 }
